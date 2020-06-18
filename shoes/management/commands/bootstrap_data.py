@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
 from shoes.models import ShoeType, ShoeColor
 
+# https://labofcoding.com/custom-django-management-commands/
 class Command(BaseCommand):
     help = 'Loads base data for shoe types and color'
 
