@@ -15,21 +15,32 @@ class ShoeType(models.Model):
         return self.style
 
 class ShoeColor(models.Model):
+    red = 'r'
+    orange = 'o'
+    yellow = 'y'
+    green = 'g'
+    blue = 'b'
+    indego = 'i'
+    violet = 'v'
+    black = 'bl'
+    white = 'w'
+
     color_choices = [
-        ('RED', 'Red'),
-        ('ORANGE', 'Orange'),
-        ('YELLOW', 'Yellow'),
-        ('GREEN', 'Green'),
-        ('BLUE', 'Blue'),
-        ('INDEGO', 'Indigo'),
-        ('VIOLET', 'Violet'),
-        ('BLACK', 'Black'),
-        ('WHITE', 'White')
+        (red , 'Red'),
+        (orange , 'Orange'),
+        (yellow , 'Yellow'),
+        (green , 'Green'),
+        (blue , 'Blue'),
+        (indego , 'Indigo'),
+        (violet , 'Violet'),
+        (black , 'Black'),
+        (white , 'White')
     ]
+
     color_name = models.CharField(
         max_length=9,
         choices=color_choices,
-        default='BLACK',
+        default=black,
     )
 
     def __str__(self):
