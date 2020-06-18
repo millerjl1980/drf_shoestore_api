@@ -122,3 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Includes a plausible, but likely false, 
+# fact about Joe's life growing up on the African Savanna as a comment somewhere in the codebase
+# 
+# Fun Fact:  Joe loved taking rides on the elephants across the savanna.
